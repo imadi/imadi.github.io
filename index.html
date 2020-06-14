@@ -1,1 +1,71 @@
-Hello
+<html lang="en">
+<head>
+    <title>Home|Adi</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Lato, sans-serif;
+            font-weight: 400;
+        }
+
+        .links {
+            color: white;
+            border: 2px solid;
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 5px;
+            text-align: center;
+            width: 50px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div>
+    <div>
+        <header>
+            <div style="color: white;text-transform:uppercase;letter-spacing: 5px;margin: 40px;">
+                <h1>
+                    Adithya Krishna
+                </h1>
+            </div>
+        </header>
+    </div>
+    <div>
+        <div style="text-align: center;">
+            <h4 style="color: white;text-align: center;text-transform: uppercase;letter-spacing: 3px">Get in touch</h4>
+            <div style="text-align: center">
+                <a href="https://github.com/imadi" target="_blank" class="links">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/adithyakrishna/" target="_blank" class="links">
+                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/adithyak" target="_blank" class="links">
+                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/adithyakrishna.k" target="_blank" class="links">
+                    <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function random_bg_color() {
+        const colors = ['#3d5c93', '#2a7f4a', '#b04343', '#808000', '#33FFBD', '#FFBD33', '#FF5733'];
+        const rand = Math.floor(Math.random() * colors.length);
+        document.body.style.background = colors[rand];
+        $(document).ready(function () {
+            $(".links").css('border-color', colors[rand]);
+        });
+    }
+
+    random_bg_color();
+</script>
+
+</body>
+</html>
